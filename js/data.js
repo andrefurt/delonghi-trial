@@ -16,6 +16,12 @@ const products = [
     originalPrice: null,
     monthlyPrice: 273.3,
     colors: ["#D4C4B0", "#838877", "#082141", "#b4b4b4"],
+    colorImages: [
+      "assets/products/rivelia.png",
+      "assets/products/rivelia-sage.png",
+      "assets/products/rivelia-dark.png",
+      "assets/products/rivelia-grey.png",
+    ],
     tags: ["new"],
     filters: ["auto-milk", "cold-drinks", "top-rated"],
     image: "assets/products/rivelia.png",

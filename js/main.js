@@ -364,8 +364,30 @@ function handleColorClick(btn) {
   btn.classList.add("product-card__color--active");
 
   // Update product image if we have color-specific images
-  // For now, we just update the active state visually
-  // In a real implementation, you'd swap the product image here
+  if (product.colorImages && product.colorImages[colorIndex]) {
+    const card = btn.closest(".product-card");
+    const img = card.querySelector(".product-card__image");
+    const newSrc = product.colorImages[colorIndex];
+
+    // Only transition if image is different
+    if (img.src.endsWith(newSrc) || img.getAttribute("src") === newSrc) return;
+
+    // Add blur, scale, opacity transition
+    img.style.filter = "blur(8px)";
+    img.style.opacity = "0";
+    img.style.transform = "scale(0.95)";
+    img.style.transition =
+      "filter 80ms ease-out, opacity 80ms ease-out, transform 80ms ease-out";
+
+    setTimeout(() => {
+      img.src = newSrc;
+      img.onload = () => {
+        img.style.filter = "blur(0)";
+        img.style.opacity = "1";
+        img.style.transform = "scale(1)";
+      };
+    }, 80);
+  }
 }
 
 // Add to cart
