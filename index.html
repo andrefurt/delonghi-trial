@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta name="theme-color" content="#082141" />
+        <title>Coffee Machines | De'Longhi</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/variables.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/components.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div class="app">
+            <!-- Trust Bar -->
+            <div class="trust-bar">
+                <div class="trust-bar__track">
+                    <div class="trust-bar__content">
+                        <span class="trust-bar__item"
+                            >Best Price Guarantee</span
+                        >
+                        <span class="trust-bar__separator">/</span>
+                        <span class="trust-bar__item"
+                            >Easy and Free Returns</span
+                        >
+                        <span class="trust-bar__separator">/</span>
+                        <span class="trust-bar__item">Free Delivery</span>
+                        <span class="trust-bar__separator">/</span>
+                        <span class="trust-bar__item">3-Year Warranty</span>
+                        <span class="trust-bar__separator">/</span>
+                    </div>
+                    <div class="trust-bar__content">
+                        <span class="trust-bar__item"
+                            >Best Price Guarantee</span
+                        >
+                        <span class="trust-bar__separator">/</span>
+                        <span class="trust-bar__item"
+                            >Easy and Free Returns</span
+                        >
+                        <span class="trust-bar__separator">/</span>
+                        <span class="trust-bar__item">Free Delivery</span>
+                        <span class="trust-bar__separator">/</span>
+                        <span class="trust-bar__item">3-Year Warranty</span>
+                        <span class="trust-bar__separator">/</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header -->
+            <header class="header">
+                <div class="header__group header__group--left">
+                    <button class="header__button" aria-label="Menu">
+                        <img
+                            src="assets/icons/hamburgerMenu.svg"
+                            alt=""
+                            width="16"
+                            height="16"
+                        />
+                    </button>
+                </div>
+
+                <!-- De'Longhi Logo -->
+                <div class="header__logo-wrapper">
+                    <img
+                        src="assets/logo/logo.svg"
+                        alt="De'Longhi"
+                        class="header__logo"
+                        width="77"
+                        height="24"
+                    />
+                </div>
+
+                <div class="header__group header__group--right">
+                    <button class="header__button" aria-label="Search">
+                        <img
+                            src="assets/icons/magnifier.svg"
+                            alt=""
+                            width="16"
+                            height="16"
+                        />
+                    </button>
+                    <button
+                        class="header__button header__cart"
+                        aria-label="Cart"
+                    >
+                        <img
+                            src="assets/icons/cart.svg"
+                            alt=""
+                            width="16"
+                            height="16"
+                        />
+                        <span class="header__cart-badge">0</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="main">
+                <!-- Page Title -->
+                <h1 class="page-title">Coffee Machines</h1>
+
+                <!-- Orientation Cards -->
+                <div class="orientation-cards scrollbar-hide">
+                    <div
+                        class="orientation-card orientation-card--sale"
+                        data-type="sale"
+                    >
+                        <img
+                            src="assets/products/rivelia-family-off.jpg"
+                            alt=""
+                            class="orientation-card__bg"
+                        />
+                        <span class="orientation-card__label">Sale</span>
+                        <h3 class="orientation-card__title">
+                            20% off<br />Rivelia family
+                        </h3>
+                        <div class="orientation-card__cta">→</div>
+                    </div>
+
+                    <div
+                        class="orientation-card orientation-card--quiz"
+                        data-type="quiz"
+                    >
+                        <img
+                            src="assets/illustrations/which-one.png"
+                            alt=""
+                            class="orientation-card__bg orientation-card__bg--blend"
+                        />
+                        <span class="orientation-card__label">Which one?</span>
+                        <h3 class="orientation-card__title">
+                            Find the right<br />one for you.
+                        </h3>
+                        <div class="orientation-card__cta">→</div>
+                    </div>
+
+                    <div
+                        class="orientation-card orientation-card--welcome"
+                        data-type="welcome"
+                    >
+                        <img
+                            src="assets/illustrations/welcome-pack.png"
+                            alt=""
+                            class="orientation-card__bg"
+                        />
+                        <span class="orientation-card__label"
+                            >welcome pack</span
+                        >
+                        <h3 class="orientation-card__title">
+                            90€ in value.<br />Beans & care set.
+                        </h3>
+                        <div class="orientation-card__cta">→</div>
+                    </div>
+                </div>
+
+                <!-- Quick Filters -->
+                <div class="quick-filters scrollbar-hide">
+                    <button
+                        class="quick-filter quick-filter--icon-only"
+                        aria-label="All filters"
+                    >
+                        <img
+                            src="assets/icons/filters.svg"
+                            alt=""
+                            width="16"
+                            height="16"
+                        />
+                    </button>
+
+                    <button class="quick-filter active" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="quick-filter" data-filter="on-sale">
+                        <img
+                            src="assets/icons/sale.svg"
+                            alt=""
+                            width="14"
+                            height="14"
+                        />
+                        On sale
+                    </button>
+
+                    <button class="quick-filter" data-filter="auto-milk">
+                        <img
+                            src="assets/icons/lightning.svg"
+                            alt=""
+                            width="14"
+                            height="14"
+                        />
+                        Auto milk
+                    </button>
+
+                    <button class="quick-filter" data-filter="cold-drinks">
+                        <img
+                            src="assets/icons/snowflake.svg"
+                            alt=""
+                            width="14"
+                            height="14"
+                        />
+                        Cold drinks
+                    </button>
+
+                    <button class="quick-filter" data-filter="compact">
+                        <img
+                            src="assets/icons/ruler.svg"
+                            alt=""
+                            width="14"
+                            height="14"
+                        />
+                        Compact size
+                    </button>
+
+                    <button class="quick-filter" data-filter="top-rated">
+                        <img
+                            src="assets/icons/topRated.svg"
+                            alt=""
+                            width="14"
+                            height="14"
+                        />
+                        Top Rated
+                    </button>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="product-grid">
+                    <!-- Products rendered by JavaScript -->
+                </div>
+
+                <!-- USP Bar -->
+                <div class="usp-bar">
+                    <div class="usp-bar__item">
+                        <img
+                            src="assets/icons/boxAccelerating.svg"
+                            alt=""
+                            class="usp-bar__icon"
+                            width="16"
+                            height="16"
+                        />
+                        <span class="usp-bar__title">Light speed delivery</span>
+                        <span class="usp-bar__subtitle">2-4 days average</span>
+                    </div>
+
+                    <div class="usp-bar__item">
+                        <img
+                            src="assets/icons/boxOpen.svg"
+                            alt=""
+                            class="usp-bar__icon"
+                            width="16"
+                            height="16"
+                        />
+                        <span class="usp-bar__title">Free delivery</span>
+                        <span class="usp-bar__subtitle"
+                            >On orders over €36</span
+                        >
+                    </div>
+
+                    <div class="usp-bar__item">
+                        <img
+                            src="assets/icons/securePayments.svg"
+                            alt=""
+                            class="usp-bar__icon"
+                            width="16"
+                            height="16"
+                        />
+                        <span class="usp-bar__title"
+                            >Pay in 3, with Klarna</span
+                        >
+                        <span class="usp-bar__subtitle">Interest free</span>
+                    </div>
+
+                    <div class="usp-bar__item">
+                        <img
+                            src="assets/icons/truck.svg"
+                            alt=""
+                            class="usp-bar__icon"
+                            width="16"
+                            height="16"
+                        />
+                        <span class="usp-bar__title">30 day to return</span>
+                        <span class="usp-bar__subtitle"
+                            >Free home collection</span
+                        >
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer__links">
+                    <img
+                        src="assets/logo/logo.svg"
+                        alt="De'Longhi"
+                        class="footer__logo"
+                        width="77"
+                        height="24"
+                    />
+
+                    <div class="footer__nav">
+                        <button class="footer__nav-item">
+                            <span>Products</span>
+                            <svg
+                                class="footer__chevron"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                width="16"
+                                height="16"
+                            >
+                                <path
+                                    d="M4 6L8 10L12 6"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <button class="footer__nav-item">
+                            <span>Inspiration</span>
+                            <svg
+                                class="footer__chevron"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                width="16"
+                                height="16"
+                            >
+                                <path
+                                    d="M4 6L8 10L12 6"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <button class="footer__nav-item">
+                            <span>My Account</span>
+                            <svg
+                                class="footer__chevron"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                width="16"
+                                height="16"
+                            >
+                                <path
+                                    d="M4 6L8 10L12 6"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <button class="footer__nav-item">
+                            <span>Help</span>
+                            <svg
+                                class="footer__chevron"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                width="16"
+                                height="16"
+                            >
+                                <path
+                                    d="M4 6L8 10L12 6"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <button class="footer__nav-item">
+                            <span>About De'Longhi</span>
+                            <svg
+                                class="footer__chevron"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                width="16"
+                                height="16"
+                            >
+                                <path
+                                    d="M4 6L8 10L12 6"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Newsletter Section -->
+                <div class="newsletter">
+                    <img
+                        src="assets/illustrations/newsletter.png"
+                        alt=""
+                        class="newsletter__bg"
+                    />
+                    <div class="newsletter__content">
+                        <h2 class="newsletter__title">First to know.</h2>
+                        <p class="newsletter__subtitle">
+                            Sales, restocks, exclusive colours.
+                        </p>
+                        <form class="newsletter__form">
+                            <input
+                                type="email"
+                                class="newsletter__input"
+                                placeholder="Email address"
+                                required
+                            />
+                            <button type="submit" class="newsletter__button">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <p class="footer__copyright">
+                        © Delonghi Appliances S.r.l. All rights reserved
+                    </p>
+                    <div class="footer__legal">
+                        <a href="#">Privacy Policy</a>
+                        <span>|</span>
+                        <a href="#">Cookie Policy</a>
+                        <span>|</span>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Legal Notice</a>
+                        <span>|</span>
+                        <a href="#">Accessibility Statement</a>
+                    </div>
+                    <p class="footer__contact">
+                        Other ways to buy: <a href="#">Find a seller</a> or Call
+                        <a href="tel:000000000">000 000 000</a>
+                    </p>
+
+                    <div class="footer__meta">
+                        <button class="footer__language">
+                            <img
+                                src="assets/icons/flag.svg"
+                                alt=""
+                                class="footer__flag"
+                                width="13"
+                                height="13"
+                            />
+                            <span>Pt</span>
+                            <svg
+                                class="footer__chevron-small"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                width="13"
+                                height="13"
+                            >
+                                <path
+                                    d="M4 6L8 10L12 6"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <div class="footer__social">
+                            <a href="#" aria-label="Messenger"
+                                ><img
+                                    src="assets/icons/MessengerLogo.svg"
+                                    alt=""
+                                    width="20"
+                                    height="20"
+                            /></a>
+                            <a href="#" aria-label="Instagram"
+                                ><img
+                                    src="assets/icons/InstagramLogo.svg"
+                                    alt=""
+                                    width="20"
+                                    height="20"
+                            /></a>
+                            <a href="#" aria-label="YouTube"
+                                ><img
+                                    src="assets/icons/youTube.svg"
+                                    alt=""
+                                    width="20"
+                                    height="20"
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Comparison Bar -->
+            <div class="comparison-bar">
+                <div class="comparison-bar__slots">
+                    <div class="comparison-bar__slot">
+                        <span class="comparison-bar__slot-placeholder">–</span>
+                    </div>
+                    <div class="comparison-bar__slot">
+                        <span class="comparison-bar__slot-placeholder">–</span>
+                    </div>
+                    <div class="comparison-bar__slot">
+                        <span class="comparison-bar__slot-placeholder">–</span>
+                    </div>
+                </div>
+                <button class="comparison-bar__compare">Compare</button>
+            </div>
+
+            <!-- Toast -->
+            <div class="toast">
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Added to cart</span>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="js/icons.js"></script>
+        <script src="js/data.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

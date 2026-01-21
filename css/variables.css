@@ -1,0 +1,125 @@
+/* De'Longhi Design Tokens */
+
+:root {
+  /* Primary Colors */
+  --color-navy: #082141;
+  --color-navy-light: #364b66;
+  --color-navy-muted: #6a7d95;
+  
+  /* Background Colors */
+  --color-bg: #f9f4f0;
+  --color-bg-card: #ebe7e0;
+  --color-bg-warm: #e8e3dc;
+  --color-bg-dark: #082141;
+  
+  /* Text Colors */
+  --color-text-primary: #082141;
+  --color-text-secondary: rgba(8, 33, 65, 0.8);
+  --color-text-muted: rgba(8, 33, 65, 0.5);
+  --color-text-inverse: #f9f4f0;
+  
+  /* Accent Colors */
+  --color-accent-green: #888c73;
+  --color-accent-brown: #754436;
+  --color-accent-terracotta: #6d4439;
+  --color-accent-teal: #3d5a5a;
+  --color-accent-sale: #39241e;
+  
+  /* UI Colors */
+  --color-border: rgba(8, 33, 65, 0.12);
+  --color-border-light: rgba(255, 255, 255, 0.3);
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-glass: rgba(255, 255, 255, 0.16);
+  --color-glass-dark: rgba(8, 33, 65, 0.8);
+  
+  /* Filter Colors */
+  --color-filter-active: #754436;
+  --color-filter-hover: rgba(255, 255, 255, 0.16);
+  --color-filter-muted: rgba(255, 255, 255, 0.08);
+  
+  /* Typography - Font Families */
+  --font-serif: 'DeLonghi Serif', Georgia, serif;
+  --font-sans: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-compact: 'SF Compact Text', -apple-system, sans-serif;
+  
+  /* Typography - Font Sizes */
+  --text-2xs: 10px;
+  --text-xs: 11px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-md: 15px;
+  --text-lg: 16px;
+  --text-xl: 20px;
+  --text-2xl: 28px;
+  --text-3xl: 40px;
+  
+  /* Typography - Line Heights */
+  --leading-tight: 1.1;
+  --leading-snug: 1.25;
+  --leading-normal: 1.4;
+  --leading-relaxed: 1.5;
+  
+  /* Typography - Font Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  
+  /* Typography - Letter Spacing */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.02em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+  
+  /* Spacing */
+  --space-2xs: 2px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --space-2xl: 24px;
+  --space-3xl: 32px;
+  --space-4xl: 40px;
+  --space-5xl: 48px;
+  
+  /* Border Radius */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.2);
+  --shadow-compare: 0 12px 24px rgba(0, 0, 0, 0.25);
+  
+  /* Layout */
+  --viewport-max: 430px;
+  --header-height: 56px;
+  --trust-bar-height: 27px;
+  --comparison-bar-height: 64px;
+  --page-padding: 8px;
+  
+  /* Transitions */
+  --ease-out: cubic-bezier(0.33, 1, 0.68, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  
+  /* Z-Index Scale */
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-toast: 600;
+}

@@ -1,0 +1,189 @@
+/* De'Longhi Fonts */
+
+/* DeLonghi Serif */
+@font-face {
+  font-family: 'DeLonghi Serif';
+  src: url('../fonts/delonghi-serif/DeLonghi Serif Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DeLonghi Serif';
+  src: url('../fonts/delonghi-serif/DeLonghi Serif Light Italic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DeLonghi Serif';
+  src: url('../fonts/delonghi-serif/DeLonghi Serif Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DeLonghi Serif';
+  src: url('../fonts/delonghi-serif/DeLonghi Serif Regular Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DeLonghi Serif';
+  src: url('../fonts/delonghi-serif/DeLonghi Serif Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DeLonghi Serif';
+  src: url('../fonts/delonghi-serif/DeLonghi Serif Medium Italic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DeLonghi Serif';
+  src: url('../fonts/delonghi-serif/DeLonghi Serif Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DeLonghi Serif';
+  src: url('../fonts/delonghi-serif/DeLonghi Serif Bold Italic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DeLonghi Serif';
+  src: url('../fonts/delonghi-serif/DeLonghi Serif Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DeLonghi Sans */
+@font-face {
+  font-family: 'DeLonghi Sans';
+  src: url('../fonts/delonghi-serif/DeLonghi Sans Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DeLonghi Sans';
+  src: url('../fonts/delonghi-serif/DeLonghi Sans Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DeLonghi Sans';
+  src: url('../fonts/delonghi-serif/DeLonghi Sans Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DeLonghi Sans';
+  src: url('../fonts/delonghi-serif/DeLonghi Sans Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SF Pro Text */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('../fonts/sf-pro/SF-Pro-Text-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('../fonts/sf-pro/SF-Pro-Text-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('../fonts/sf-pro/SF-Pro-Text-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('../fonts/sf-pro/SF-Pro-Text-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('../fonts/sf-pro/SF-Pro-Text-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('../fonts/sf-pro/SF-Pro-Text-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SF Compact Text */
+@font-face {
+  font-family: 'SF Compact Text';
+  src: url('../fonts/sf-pro/SF-Compact-Text-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Compact Text';
+  src: url('../fonts/sf-pro/SF-Compact-Text-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Compact Text';
+  src: url('../fonts/sf-pro/SF-Compact-Text-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Compact Text';
+  src: url('../fonts/sf-pro/SF-Compact-Text-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

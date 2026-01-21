@@ -1,0 +1,105 @@
+/* De'Longhi Main Styles */
+
+body {
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    color: var(--color-text-primary);
+    background: var(--color-bg);
+}
+
+/* Page-specific adjustments */
+
+/* Product count indicator */
+.product-count {
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    text-align: center;
+    padding: var(--space-xl) var(--page-padding);
+}
+
+/* Footer spacing */
+.footer-spacer {
+    height: var(--space-4xl);
+}
+
+/* Loading states */
+.skeleton {
+    background: linear-gradient(
+        90deg,
+        var(--color-bg-card) 25%,
+        var(--color-bg-warm) 50%,
+        var(--color-bg-card) 75%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Cart animation */
+@keyframes cart-bounce {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.cart-bounce {
+    animation: cart-bounce 0.3s var(--ease-bounce);
+}
+
+/* Filter transition helper */
+.filtering {
+    pointer-events: none;
+}
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    padding: var(--space-5xl) var(--space-xl);
+}
+
+.empty-state__icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto var(--space-lg);
+    opacity: 0.3;
+}
+
+.empty-state__title {
+    font-family: var(--font-serif);
+    font-size: var(--text-xl);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.empty-state__text {
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+}
+
+/* Scroll snap for orientation cards on iOS */
+@supports (-webkit-touch-callout: none) {
+    .orientation-cards {
+        scroll-padding: var(--page-padding);
+    }
+}
+
+/* Safe area insets for notched devices */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    .comparison-bar {
+        bottom: calc(var(--space-xl) + env(safe-area-inset-bottom));
+    }
+}
