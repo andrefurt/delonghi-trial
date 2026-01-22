@@ -1140,6 +1140,7 @@
 .comparison-bar__slot--filled {
     border: none;
     background: #ebe7e0;
+    cursor: pointer;
 }
 
 .comparison-bar__slot-placeholder {
@@ -1190,7 +1191,15 @@
     font-size: 16px;
     font-weight: 510;
     color: #f9f4f0;
+    white-space: nowrap;
+    flex-shrink: 0;
     transition: all var(--duration-fast) var(--ease-out);
+}
+
+.comparison-bar__compare--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    font-size: 14px;
 }
 
 .comparison-bar__compare:active {

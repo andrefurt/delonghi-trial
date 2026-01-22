@@ -255,10 +255,17 @@ function bindEvents() {
 
   // Comparison bar events
   comparisonBar?.addEventListener("click", (e) => {
-    const removeBtn = e.target.closest(".comparison-bar__slot-remove");
-    if (removeBtn) {
-      const productId = parseInt(removeBtn.dataset.productId);
-      removeFromCompare(productId);
+    // Handle click on filled slot or remove button
+    const filledSlot = e.target.closest(".comparison-bar__slot--filled");
+    if (filledSlot) {
+      const removeBtn = filledSlot.querySelector(
+        ".comparison-bar__slot-remove",
+      );
+      if (removeBtn) {
+        const productId = parseInt(removeBtn.dataset.productId);
+        removeFromCompare(productId);
+      }
+      return;
     }
   });
 
@@ -325,6 +332,7 @@ function updateComparisonBar() {
   if (!comparisonBar) return;
 
   const slots = comparisonBar.querySelector(".comparison-bar__slots");
+  const compareBtn = comparisonBar.querySelector(".comparison-bar__compare");
 
   // Show/hide bar
   if (compareList.length > 0) {
@@ -332,6 +340,19 @@ function updateComparisonBar() {
   } else {
     comparisonBar.classList.remove("visible");
     return;
+  }
+
+  // Update button state based on number of items
+  if (compareBtn) {
+    if (compareList.length < 2) {
+      compareBtn.disabled = true;
+      compareBtn.classList.add("comparison-bar__compare--disabled");
+      compareBtn.textContent = "Add one more";
+    } else {
+      compareBtn.disabled = false;
+      compareBtn.classList.remove("comparison-bar__compare--disabled");
+      compareBtn.textContent = "Compare";
+    }
   }
 
   // Render slots
