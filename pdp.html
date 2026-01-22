@@ -141,6 +141,7 @@
                                     muted
                                     playsinline
                                     loop
+                                    preload="auto"
                                 ></video>
                             </div>
                             <!-- Slide 2: Lifestyle image -->
@@ -309,88 +310,81 @@
 
                 <!-- USPs Section -->
                 <section class="pdp-usps">
-                    <h2 class="pdp-section-title">Why De'Longhi?</h2>
-                    <p class="pdp-section-subtitle">
-                        Here's why you should buy direct.
-                    </p>
+                    <div class="pdp-usps__card">
+                        <h2 class="pdp-usps__title">Only at De'Longhi store</h2>
 
-                    <div class="pdp-usps__grid">
-                        <div class="pdp-usp">
-                            <img
-                                src="assets/icons/fire.svg"
-                                alt=""
-                                class="pdp-usp__icon"
-                            />
-                            <div class="pdp-usp__content">
-                                <span class="pdp-usp__title">Price match</span>
-                                <span class="pdp-usp__desc"
-                                    >Best price guarantee.</span
+                        <div class="pdp-usps__grid">
+                            <div class="usp-bar__item">
+                                <img
+                                    src="assets/icons/truck.svg"
+                                    alt=""
+                                    class="usp-bar__icon"
+                                />
+                                <span class="usp-bar__title"
+                                    >Light speed delivery</span
+                                >
+                                <span class="usp-bar__subtitle"
+                                    >1-3 days average</span
                                 >
                             </div>
-                        </div>
-                        <div class="pdp-usp">
-                            <img
-                                src="assets/icons/ShieldCheck.svg"
-                                alt=""
-                                class="pdp-usp__icon"
-                            />
-                            <div class="pdp-usp__content">
-                                <span class="pdp-usp__title"
-                                    >3 year warranty</span
-                                >
-                                <span class="pdp-usp__desc"
-                                    >Extra year on us.</span
-                                >
-                            </div>
-                        </div>
-                        <div class="pdp-usp">
-                            <img
-                                src="assets/icons/delivery-usp.svg"
-                                alt=""
-                                class="pdp-usp__icon"
-                            />
-                            <div class="pdp-usp__content">
-                                <span class="pdp-usp__title"
+                            <div class="usp-bar__item">
+                                <img
+                                    src="assets/icons/boxOpen.svg"
+                                    alt=""
+                                    class="usp-bar__icon"
+                                />
+                                <span class="usp-bar__title"
                                     >Free delivery</span
                                 >
-                                <span class="pdp-usp__desc"
-                                    >Straight to your door.</span
+                                <span class="usp-bar__subtitle"
+                                    >On orders over €36</span
+                                >
+                            </div>
+                            <div class="usp-bar__item">
+                                <img
+                                    src="assets/icons/ShieldCheckBlue.svg"
+                                    alt=""
+                                    class="usp-bar__icon"
+                                />
+                                <span class="usp-bar__title"
+                                    >3 year warranty</span
+                                >
+                                <span class="usp-bar__subtitle"
+                                    >Extra year on us</span
+                                >
+                            </div>
+                            <div class="usp-bar__item">
+                                <img
+                                    src="assets/icons/boxAccelerating.svg"
+                                    alt=""
+                                    class="usp-bar__icon"
+                                />
+                                <span class="usp-bar__title"
+                                    >30 day to return</span
+                                >
+                                <span class="usp-bar__subtitle"
+                                    >Free home collection</span
                                 >
                             </div>
                         </div>
-                        <div class="pdp-usp">
-                            <img
-                                src="assets/icons/handHeart.svg"
-                                alt=""
-                                class="pdp-usp__icon"
-                            />
-                            <div class="pdp-usp__content">
-                                <span class="pdp-usp__title"
-                                    >Trade in & save</span
-                                >
-                                <span class="pdp-usp__desc"
-                                    >We take your old one.</span
-                                >
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Welcome Pack Card -->
-                    <div class="pdp-welcome-pack">
-                        <span class="pdp-welcome-pack__label"
-                            >Welcome Pack</span
-                        >
-                        <h3 class="pdp-welcome-pack__title">
-                            90€ in value.<br />Beans & care set.
-                        </h3>
-                        <div class="pdp-welcome-pack__tags">
-                            <span class="pdp-welcome-pack__tag"
-                                >250g beans</span
+                        <!-- Welcome Pack Card -->
+                        <div class="pdp-welcome-pack">
+                            <span class="pdp-welcome-pack__label"
+                                >Welcome Pack</span
                             >
-                            <span class="pdp-welcome-pack__tag">Descaler</span>
-                            <span class="pdp-welcome-pack__tag"
-                                >Milk cleaner</span
-                            >
+                            <h3 class="pdp-welcome-pack__title">
+                                90€ in value.<br />Free with your purchase.
+                            </h3>
+                            <div class="pdp-welcome-pack__tags">
+                                <span class="pdp-welcome-pack__tag"
+                                    >Lavazza Coffee beans 500g</span
+                                >
+                                <span class="pdp-welcome-pack__tag"
+                                    >Cleaning kit</span
+                                >
+                                <span class="pdp-welcome-pack__tag">Cups</span>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -406,36 +400,52 @@
 
                     <!-- Feature Cards -->
                     <div class="pdp-features scrollbar-hide">
-                        <div class="pdp-feature-card pdp-feature-card--dark">
+                        <div class="pdp-feature-card pdp-feature-card--1">
                             <img
-                                src="assets/icons/magicWand.svg"
+                                src="assets/icons/coffee.svg"
                                 alt=""
                                 class="pdp-feature-card__icon"
                                 style="filter: brightness(0) invert(1)"
                             />
                             <h3 class="pdp-feature-card__title">
-                                One-touch<br />everything
+                                LateCrema<br />System©
                             </h3>
                             <p class="pdp-feature-card__desc">
-                                17 hot and cold recipes at a touch, customizable
-                                to your taste.
+                                Rich and creamy milk foam with automatic
+                                temperature and texture adjustments for better,
+                                consistent results.
                             </p>
                         </div>
-                        <div class="pdp-feature-card pdp-feature-card--light">
+                        <div class="pdp-feature-card pdp-feature-card--2">
                             <img
                                 src="assets/icons/snowflake.svg"
                                 alt=""
                                 class="pdp-feature-card__icon"
                             />
                             <h3 class="pdp-feature-card__title">
-                                Cold brew<br />in seconds
+                                LatteCrema Cool<br />system©
                             </h3>
                             <p class="pdp-feature-card__desc">
-                                Iced coffee without the wait. Cold extraction at
-                                the touch of a button.
+                                Add the optional Cool upgrade set anytime. Cold
+                                lattes and iced cappuccinos on demand.
                             </p>
                         </div>
-                        <div class="pdp-feature-card pdp-feature-card--olive">
+                        <div class="pdp-feature-card pdp-feature-card--3">
+                            <img
+                                src="assets/icons/coffeeBean.svg"
+                                alt=""
+                                class="pdp-feature-card__icon"
+                                style="filter: brightness(0) invert(1)"
+                            />
+                            <h3 class="pdp-feature-card__title">
+                                Beam adapt<br />technology.
+                            </h3>
+                            <p class="pdp-feature-card__desc">
+                                Auto recognizes the bean type and adjusts
+                                extraction parameters for optimal flavor.
+                            </p>
+                        </div>
+                        <div class="pdp-feature-card pdp-feature-card--4">
                             <img
                                 src="assets/icons/phone.svg"
                                 alt=""
@@ -443,47 +453,30 @@
                                 style="filter: brightness(0) invert(1)"
                             />
                             <h3 class="pdp-feature-card__title">
-                                App<br />connected
+                                Coffee link©,<br />Control via app.
                             </h3>
                             <p class="pdp-feature-card__desc">
-                                Control your machine, create recipes, and get
-                                tips from your phone.
-                            </p>
-                        </div>
-                        <div class="pdp-feature-card pdp-feature-card--image">
-                            <img
-                                src="assets/icons/coffee.svg"
-                                alt=""
-                                class="pdp-feature-card__icon"
-                            />
-                            <h3 class="pdp-feature-card__title">
-                                LatteCrema<br />technology
-                            </h3>
-                            <p class="pdp-feature-card__desc">
-                                Creamy, thick microfoam for perfect lattes every
-                                time.
+                                Control your machine via smartphone. Create
+                                custom recipes and save your personal profiles.
                             </p>
                         </div>
                     </div>
 
                     <!-- Perfetto Section -->
                     <div class="pdp-perfetto">
-                        <span class="pdp-perfetto__label">Perfetto for:</span>
+                        <span class="pdp-perfetto__label"
+                            >Perfetto if you love</span
+                        >
                         <div class="pdp-perfetto__tags">
                             <span class="pdp-perfetto__tag"
-                                >Espresso lovers</span
+                                >One-touch simplicity</span
                             >
                             <span class="pdp-perfetto__tag"
-                                >Milk drink fans</span
+                                >Creamy milk drinks</span
                             >
+                            <span class="pdp-perfetto__tag">Cold drinks</span>
                             <span class="pdp-perfetto__tag"
-                                >Cold brew enthusiasts</span
-                            >
-                            <span class="pdp-perfetto__tag"
-                                >Tech-savvy users</span
-                            >
-                            <span class="pdp-perfetto__tag"
-                                >Design conscious</span
+                                >Customizing via app</span
                             >
                         </div>
                     </div>
@@ -494,42 +487,52 @@
                             Technical specifications
                         </h3>
                         <div class="pdp-spec">
-                            <img src="assets/icons/ruler.svg" alt="" />
-                            <span class="pdp-spec__label"
-                                >Dimensions (WxDxH)</span
-                            >
-                            <span class="pdp-spec__value">25 x 43 x 35 cm</span>
-                        </div>
-                        <div class="pdp-spec">
-                            <img src="assets/icons/scale.svg" alt="" />
-                            <span class="pdp-spec__label">Weight</span>
-                            <span class="pdp-spec__value">9.5 kg</span>
-                        </div>
-                        <div class="pdp-spec">
-                            <img src="assets/icons/droplet.svg" alt="" />
-                            <span class="pdp-spec__label"
-                                >Water tank capacity</span
-                            >
-                            <span class="pdp-spec__value">1.8 L</span>
+                            <img src="assets/icons/Brandy.svg" alt="" />
+                            <span class="pdp-spec__label">Drinks</span>
+                            <span class="pdp-spec__value">12 specialities</span>
                         </div>
                         <div class="pdp-spec">
                             <img src="assets/icons/coffee.svg" alt="" />
-                            <span class="pdp-spec__label"
-                                >Bean container capacity</span
+                            <span class="pdp-spec__label">Milk system</span>
+                            <span class="pdp-spec__value"
+                                >LatteCrema© Auto</span
                             >
-                            <span class="pdp-spec__value">300 g</span>
                         </div>
                         <div class="pdp-spec">
-                            <img src="assets/icons/lightning.svg" alt="" />
-                            <span class="pdp-spec__label">Pump pressure</span>
+                            <img src="assets/icons/DotsNine.svg" alt="" />
+                            <span class="pdp-spec__label">Grinder</span>
+                            <span class="pdp-spec__value"
+                                >Built-in, 13 levels</span
+                            >
+                        </div>
+                        <div class="pdp-spec">
+                            <img src="assets/icons/Drop.svg" alt="" />
+                            <span class="pdp-spec__label">Water capacity</span>
+                            <span class="pdp-spec__value">1.4L</span>
+                        </div>
+                        <div class="pdp-spec">
+                            <img src="assets/icons/Tilde.svg" alt="" />
+                            <span class="pdp-spec__label">Pressure</span>
                             <span class="pdp-spec__value">19 bar</span>
                         </div>
-                        <div class="pdp-spec pdp-spec--last">
-                            <img src="assets/icons/target.svg" alt="" />
-                            <span class="pdp-spec__label">Grinder type</span>
+                        <div class="pdp-spec">
+                            <img src="assets/icons/WifiHigh.svg" alt="" />
+                            <span class="pdp-spec__label">Connectivity</span>
                             <span class="pdp-spec__value"
-                                >Steel conical burr</span
+                                >Android app / iOS</span
                             >
+                        </div>
+                        <div class="pdp-spec">
+                            <img src="assets/icons/ruler.svg" alt="" />
+                            <span class="pdp-spec__label">Dimensions</span>
+                            <span class="pdp-spec__value"
+                                >240 × 440 × 360 mm</span
+                            >
+                        </div>
+                        <div class="pdp-spec pdp-spec--last">
+                            <img src="assets/icons/Barcode.svg" alt="" />
+                            <span class="pdp-spec__label">SKU</span>
+                            <span class="pdp-spec__value">EXAM440.55.G</span>
                         </div>
                     </div>
                 </section>
@@ -537,16 +540,7 @@
                 <!-- Videos -->
                 <div class="pdp-videos scrollbar-hide">
                     <div class="pdp-video">
-                        <div
-                            class="pdp-video__thumb"
-                            style="
-                                background: linear-gradient(
-                                    135deg,
-                                    #39241e 0%,
-                                    #5a3d32 100%
-                                );
-                            "
-                        >
+                        <div class="pdp-video__thumb pdp-video__thumb--1">
                             <div class="pdp-video__play">
                                 <img src="assets/icons/play.svg" alt="" />
                             </div>
@@ -556,16 +550,7 @@
                         >
                     </div>
                     <div class="pdp-video">
-                        <div
-                            class="pdp-video__thumb"
-                            style="
-                                background: linear-gradient(
-                                    135deg,
-                                    #838877 0%,
-                                    #a19a7f 100%
-                                );
-                            "
-                        >
+                        <div class="pdp-video__thumb pdp-video__thumb--2">
                             <div class="pdp-video__play">
                                 <img src="assets/icons/play.svg" alt="" />
                             </div>
@@ -575,16 +560,7 @@
                         >
                     </div>
                     <div class="pdp-video">
-                        <div
-                            class="pdp-video__thumb"
-                            style="
-                                background: linear-gradient(
-                                    135deg,
-                                    #082141 0%,
-                                    #364b66 100%
-                                );
-                            "
-                        >
+                        <div class="pdp-video__thumb pdp-video__thumb--3">
                             <div class="pdp-video__play">
                                 <img src="assets/icons/play.svg" alt="" />
                             </div>
@@ -593,15 +569,23 @@
                             >Cleaning and maintenance</span
                         >
                     </div>
+                    <div class="pdp-video">
+                        <div class="pdp-video__thumb pdp-video__thumb--4">
+                            <div class="pdp-video__play">
+                                <img src="assets/icons/play.svg" alt="" />
+                            </div>
+                        </div>
+                        <span class="pdp-video__title"
+                            >Bean to cup in 60 seconds</span
+                        >
+                    </div>
                 </div>
 
                 <!-- Reviews -->
                 <section class="pdp-reviews">
                     <div class="pdp-reviews__header">
                         <h2 class="pdp-section-title">Customer reviews</h2>
-                        <p class="pdp-section-subtitle">
-                            What our customers say.
-                        </p>
+                        <p class="pdp-section-subtitle">847 reviews</p>
                         <div class="pdp-reviews__score">
                             <span class="pdp-reviews__score-main">4.1</span>
                             <span class="pdp-reviews__score-total">/5</span>
@@ -612,7 +596,6 @@
                         <button
                             class="pdp-review-filter pdp-review-filter--active"
                         >
-                            <img src="assets/icons/topRated.svg" alt="" />
                             All
                         </button>
                         <button class="pdp-review-filter">
@@ -641,6 +624,11 @@
                         <article class="pdp-review">
                             <div class="pdp-review__header">
                                 <span class="pdp-review__author">Maria S.</span>
+                                <img
+                                    class="pdp-review__verified"
+                                    src="assets/icons/SealCheck.svg"
+                                    alt="Verified"
+                                />
                             </div>
                             <div class="pdp-review__rating">
                                 <img src="assets/icons/topRated.svg" alt="" />
@@ -655,11 +643,17 @@
                             <div class="pdp-review__photos">
                                 <div
                                     class="pdp-review__photo"
-                                    style="background: #e8e8e8"
+                                    style="
+                                        background: url(&quot;assets/products/rivelia-PDP/review-1.png&quot;)
+                                            center/cover;
+                                    "
                                 ></div>
                                 <div
                                     class="pdp-review__photo"
-                                    style="background: #ddd"
+                                    style="
+                                        background: url(&quot;assets/products/rivelia-PDP/review-2.png&quot;)
+                                            center/cover;
+                                    "
                                 ></div>
                                 <div
                                     class="pdp-review__photo pdp-review__photo--more"
@@ -682,6 +676,11 @@
                         <article class="pdp-review">
                             <div class="pdp-review__header">
                                 <span class="pdp-review__author">Joao P.</span>
+                                <img
+                                    class="pdp-review__verified"
+                                    src="assets/icons/SealCheck.svg"
+                                    alt="Verified"
+                                />
                             </div>
                             <div class="pdp-review__rating">
                                 <img src="assets/icons/topRated.svg" alt="" />
@@ -708,6 +707,11 @@
                         <article class="pdp-review pdp-review--last">
                             <div class="pdp-review__header">
                                 <span class="pdp-review__author">Ana R.</span>
+                                <img
+                                    class="pdp-review__verified"
+                                    src="assets/icons/SealCheck.svg"
+                                    alt="Verified"
+                                />
                             </div>
                             <div class="pdp-review__rating">
                                 <img src="assets/icons/topRated.svg" alt="" />
@@ -747,22 +751,20 @@
                         <div class="pdp-cross-sell__item">
                             <div class="pdp-cross-sell__image">
                                 <img
-                                    src="assets/products/beans.png"
+                                    src="assets/products/rivelia-PDP/extra-1.png"
                                     alt="Coffee Beans"
                                 />
                             </div>
                             <div class="pdp-cross-sell__info">
                                 <div class="pdp-cross-sell__text">
                                     <span class="pdp-cross-sell__name"
-                                        >Classico Coffee Beans</span
+                                        >Water Filter</span
                                     >
                                     <span class="pdp-cross-sell__desc"
-                                        >1kg - Medium roast</span
+                                        >Improves taste & longevity</span
                                     >
                                 </div>
-                                <span class="pdp-cross-sell__price"
-                                    >€19,90</span
-                                >
+                                <span class="pdp-cross-sell__price">€15</span>
                             </div>
                             <button
                                 class="pdp-cross-sell__add"
@@ -778,25 +780,25 @@
                         <div class="pdp-cross-sell__item">
                             <div class="pdp-cross-sell__image">
                                 <img
-                                    src="assets/products/descaler.png"
+                                    src="assets/products/rivelia-PDP/extra-2.png"
                                     alt="Descaler"
                                 />
                             </div>
                             <div class="pdp-cross-sell__info">
                                 <div class="pdp-cross-sell__text">
                                     <span class="pdp-cross-sell__name"
-                                        >EcoDecalk Mini</span
+                                        >Descaling Kit</span
                                     >
                                     <span class="pdp-cross-sell__desc"
-                                        >2x 100ml - Natural descaler</span
+                                        >4 descaling treatments</span
                                     >
                                 </div>
                                 <div class="pdp-cross-sell__prices">
                                     <span class="pdp-cross-sell__price"
-                                        >€9,90</span
+                                        >€19</span
                                     >
                                     <span class="pdp-cross-sell__price-old"
-                                        >€12,90</span
+                                        >€22</span
                                     >
                                 </div>
                             </div>
@@ -814,20 +816,20 @@
                         <div class="pdp-cross-sell__item">
                             <div class="pdp-cross-sell__image">
                                 <img
-                                    src="assets/products/milkCleaner.png"
+                                    src="assets/products/rivelia-PDP/extra-3.png"
                                     alt="Milk Cleaner"
                                 />
                             </div>
                             <div class="pdp-cross-sell__info">
                                 <div class="pdp-cross-sell__text">
                                     <span class="pdp-cross-sell__name"
-                                        >Milk Clean</span
+                                        >Premium Beans 1kg</span
                                     >
                                     <span class="pdp-cross-sell__desc"
-                                        >250ml - Milk system cleaner</span
+                                        >Signature Italian blend</span
                                     >
                                 </div>
-                                <span class="pdp-cross-sell__price">€7,90</span>
+                                <span class="pdp-cross-sell__price">€24</span>
                             </div>
                             <button
                                 class="pdp-cross-sell__add"
@@ -997,63 +999,6 @@
                         <a href="#">Contact our support team</a>
                     </div>
                 </section>
-
-                <!-- USP Bar -->
-                <div class="usp-bar">
-                    <div class="usp-bar__item">
-                        <img
-                            src="assets/icons/boxAccelerating.svg"
-                            alt=""
-                            class="usp-bar__icon"
-                            width="16"
-                            height="16"
-                        />
-                        <span class="usp-bar__title">Light speed delivery</span>
-                        <span class="usp-bar__subtitle">2-4 days average</span>
-                    </div>
-
-                    <div class="usp-bar__item">
-                        <img
-                            src="assets/icons/boxOpen.svg"
-                            alt=""
-                            class="usp-bar__icon"
-                            width="16"
-                            height="16"
-                        />
-                        <span class="usp-bar__title">Free delivery</span>
-                        <span class="usp-bar__subtitle"
-                            >On orders over €36</span
-                        >
-                    </div>
-
-                    <div class="usp-bar__item">
-                        <img
-                            src="assets/icons/securePayments.svg"
-                            alt=""
-                            class="usp-bar__icon"
-                            width="16"
-                            height="16"
-                        />
-                        <span class="usp-bar__title"
-                            >Pay in 3, with Klarna</span
-                        >
-                        <span class="usp-bar__subtitle">Interest free</span>
-                    </div>
-
-                    <div class="usp-bar__item">
-                        <img
-                            src="assets/icons/truck.svg"
-                            alt=""
-                            class="usp-bar__icon"
-                            width="16"
-                            height="16"
-                        />
-                        <span class="usp-bar__title">30 day to return</span>
-                        <span class="usp-bar__subtitle"
-                            >Free home collection</span
-                        >
-                    </div>
-                </div>
             </main>
 
             <!-- Footer -->
@@ -1142,6 +1087,24 @@
                         </button>
                         <button class="footer__nav-item">
                             <span>About De'Longhi</span>
+                            <svg
+                                class="footer__chevron"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                width="16"
+                                height="16"
+                            >
+                                <path
+                                    d="M4 6L8 10L12 6"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <button class="footer__nav-item">
+                            <span>Already an owner?</span>
                             <svg
                                 class="footer__chevron"
                                 viewBox="0 0 16 16"

@@ -34,7 +34,6 @@ body {
         var(--trust-bar-height) + var(--header-height) +
             env(safe-area-inset-top)
     );
-    padding-bottom: calc(80px + env(safe-area-inset-bottom));
 }
 
 /* ========================================
@@ -46,7 +45,7 @@ body {
     font-size: 16px;
     font-weight: 590;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
     line-height: 1;
 }
 
@@ -55,7 +54,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
     opacity: 0.7;
     margin-top: 2px;
 }
@@ -160,10 +159,12 @@ body {
 
 /* Video */
 .pdp-hero__video {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     user-select: none;
+    background: var(--color-bg-card);
 }
 
 /* Indicators Container */
@@ -514,51 +515,31 @@ body {
 
 .pdp-usps {
     margin-top: 32px;
-    padding: 32px 20px;
+}
+
+.pdp-usps__card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     background: rgba(0, 0, 0, 0.02);
-    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+    padding: 32px 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.pdp-usps__title {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    font-weight: 590;
+    color: var(--color-navy);
+    line-height: 100%;
+    letter-spacing: -0.5px;
 }
 
 .pdp-usps__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px 20px;
-    margin-top: 16px;
-}
-
-.pdp-usp {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.pdp-usp__icon {
-    width: 16px;
-    height: 16px;
-}
-
-.pdp-usp__content {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.pdp-usp__title {
-    font-family: var(--font-sans);
-    font-size: 14px;
-    font-weight: 510;
-    color: var(--color-text-primary);
-    letter-spacing: -0.5px;
-}
-
-.pdp-usp__desc {
-    font-family: var(--font-sans);
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--color-text-primary);
-    letter-spacing: -0.5px;
-    opacity: 0.8;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 20px;
 }
 
 /* ========================================
@@ -566,11 +547,13 @@ body {
    ======================================== */
 
 .pdp-welcome-pack {
-    margin-top: 32px;
     padding: 10px;
-    background: #3b2520;
+    background: #3b2520
+        url("../assets/products/rivelia-PDP/welcomePack-pdp.png") no-repeat
+        right center;
+    background-size: auto 100%;
     border-radius: var(--radius-lg);
-    height: 150px;
+    height: 160px;
     position: relative;
     overflow: hidden;
 }
@@ -587,12 +570,12 @@ body {
 
 .pdp-welcome-pack__title {
     font-family: var(--font-sans);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 590;
     color: #f9f4f0;
     letter-spacing: -0.2px;
     line-height: 1.16;
-    margin-top: 8px;
+    margin-top: 4px;
 }
 
 .pdp-welcome-pack__tags {
@@ -641,10 +624,18 @@ body {
 .pdp-features {
     display: flex;
     gap: 8px;
-    padding: 0 20px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
     -webkit-overflow-scrolling: touch;
+}
+
+.pdp-feature-card:first-child {
+    margin-left: 20px;
+}
+
+.pdp-feature-card:last-child {
+    margin-right: 20px;
 }
 
 .pdp-feature-card {
@@ -658,20 +649,28 @@ body {
     scroll-snap-align: start;
 }
 
-.pdp-feature-card--dark {
-    background: #39241e;
+.pdp-feature-card--1 {
+    background: #39241e url("../assets/products/rivelia-PDP/detailImg-1.png")
+        no-repeat center center;
+    background-size: cover;
 }
 
-.pdp-feature-card--light {
-    background: #e9e6e2;
+.pdp-feature-card--2 {
+    background: #c3ddd9 url("../assets/products/rivelia-PDP/detailImg-2.png")
+        no-repeat center center;
+    background-size: cover;
 }
 
-.pdp-feature-card--image {
-    background: #e9e6e2;
+.pdp-feature-card--3 {
+    background: #5a4a46 url("../assets/products/rivelia-PDP/detailImg-3.png")
+        no-repeat center center;
+    background-size: cover;
 }
 
-.pdp-feature-card--olive {
-    background: #a19a7f;
+.pdp-feature-card--4 {
+    background: #a19a7f url("../assets/products/rivelia-PDP/detailImg-4.png")
+        no-repeat center center;
+    background-size: cover;
 }
 
 .pdp-feature-card__icon {
@@ -684,18 +683,17 @@ body {
     font-size: 16px;
     font-weight: 590;
     line-height: 1.2;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-.pdp-feature-card--dark .pdp-feature-card__title,
-.pdp-feature-card--olive .pdp-feature-card__title {
+.pdp-feature-card--1 .pdp-feature-card__title,
+.pdp-feature-card--3 .pdp-feature-card__title,
+.pdp-feature-card--4 .pdp-feature-card__title {
     color: #f9f4f0;
-    opacity: 0.9;
 }
 
-.pdp-feature-card--light .pdp-feature-card__title,
-.pdp-feature-card--image .pdp-feature-card__title {
-    color: var(--color-text-primary);
+.pdp-feature-card--2 .pdp-feature-card__title {
+    color: var(--color-navy);
 }
 
 .pdp-feature-card__desc {
@@ -709,16 +707,14 @@ body {
     line-height: 1.2;
 }
 
-.pdp-feature-card--dark .pdp-feature-card__desc,
-.pdp-feature-card--olive .pdp-feature-card__desc {
+.pdp-feature-card--1 .pdp-feature-card__desc,
+.pdp-feature-card--3 .pdp-feature-card__desc,
+.pdp-feature-card--4 .pdp-feature-card__desc {
     color: #f9f4f0;
-    opacity: 0.9;
 }
 
-.pdp-feature-card--light .pdp-feature-card__desc,
-.pdp-feature-card--image .pdp-feature-card__desc {
-    color: var(--color-text-primary);
-    opacity: 0.9;
+.pdp-feature-card--2 .pdp-feature-card__desc {
+    color: var(--color-navy);
 }
 
 /* ========================================
@@ -726,10 +722,10 @@ body {
    ======================================== */
 
 .pdp-perfetto {
-    margin: 24px 20px 0;
+    margin: 40px 20px 20px;
     padding: 12px;
     background: rgba(0, 0, 0, 0.02);
-    border: 0.5px solid rgba(0, 0, 0, 0.12);
+    border: 0.5px solid rgba(0, 0, 0, 0.16);
     border-radius: var(--radius-lg);
 }
 
@@ -738,7 +734,7 @@ body {
     font-size: 14px;
     font-weight: 510;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
 }
 
 .pdp-perfetto__tags {
@@ -753,7 +749,7 @@ body {
     align-items: center;
     padding: 6px 8px 5px;
     background: #f9f4f0;
-    border: 0.5px solid rgba(0, 0, 0, 0.12);
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
     border-radius: var(--radius-full);
     font-family: var(--font-compact);
     font-size: 11px;
@@ -761,7 +757,7 @@ body {
     color: var(--color-text-primary);
     letter-spacing: 0.22px;
     text-transform: uppercase;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 /* ========================================
@@ -777,7 +773,7 @@ body {
     font-size: 16px;
     font-weight: 590;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
     padding-bottom: 12px;
 }
 
@@ -797,24 +793,25 @@ body {
     width: 14px;
     height: 14px;
     flex-shrink: 0;
+    opacity: 0.6;
 }
 
 .pdp-spec__label {
     flex: 1;
     font-family: var(--font-sans);
     font-size: 14px;
-    font-weight: 510;
+    font-weight: 410;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
-    opacity: 0.7;
+    letter-spacing: -0.2px;
+    opacity: 0.6;
 }
 
 .pdp-spec__value {
     font-family: var(--font-sans);
     font-size: 14px;
-    font-weight: 510;
+    font-weight: 410;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
     text-align: right;
 }
 
@@ -825,9 +822,10 @@ body {
 .pdp-videos {
     display: flex;
     gap: 8px;
-    padding: 32px 20px;
+    padding: 32px 0;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -835,6 +833,14 @@ body {
     flex-shrink: 0;
     width: 280px;
     scroll-snap-align: start;
+}
+
+.pdp-video:first-child {
+    margin-left: 20px;
+}
+
+.pdp-video:last-child {
+    margin-right: 20px;
 }
 
 .pdp-video__thumb {
@@ -847,6 +853,24 @@ body {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.pdp-video__thumb--1 {
+    background-image: url("../assets/products/rivelia-PDP/video-1.png");
+}
+
+.pdp-video__thumb--2 {
+    background-image: url("../assets/products/rivelia-PDP/video-2.png");
+}
+
+.pdp-video__thumb--3 {
+    background-image: url("../assets/products/rivelia-PDP/video-3.png");
+}
+
+.pdp-video__thumb--4 {
+    background-image: url("../assets/products/rivelia-PDP/video-4.png");
 }
 
 .pdp-video__play {
@@ -871,10 +895,10 @@ body {
     display: block;
     margin-top: 12px;
     font-family: var(--font-sans);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 590;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
 }
 
 /* ========================================
@@ -884,22 +908,22 @@ body {
 .pdp-reviews {
     padding: 32px 20px 16px;
     background: rgba(0, 0, 0, 0.02);
-    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-top: 0.5px solid rgba(0, 0, 0, 0.16);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.16);
 }
 
 .pdp-reviews__header {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .pdp-reviews__score {
-    margin-top: 16px;
+    margin-top: 20px;
 }
 
 .pdp-reviews__score-main {
     font-family: var(--font-serif);
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 480;
     color: var(--color-text-primary);
     letter-spacing: -0.5px;
 }
@@ -918,7 +942,7 @@ body {
     gap: 6px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 
 .pdp-review-filter {
@@ -928,8 +952,8 @@ body {
     gap: 4px;
     height: 36px;
     padding: 0 14px 0 12px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 0.5px solid rgba(8, 33, 65, 0.12);
+    background: rgba(255, 255, 255, 0.16);
+    border: 0.5px solid rgba(8, 33, 65, 0.2);
     border-radius: var(--radius-full);
     font-family: var(--font-compact);
     font-size: 13px;
@@ -958,7 +982,7 @@ body {
 
 .pdp-review {
     padding-bottom: 24px;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.12);
 }
 
 .pdp-review--last {
@@ -978,16 +1002,22 @@ body {
     font-size: 16px;
     font-weight: 510;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
+}
+
+.pdp-review__verified {
+    width: 16px;
+    height: 16px;
 }
 
 .pdp-review__rating {
     display: flex;
     align-items: center;
     gap: 4px;
+    width: fit-content;
     padding: 6px 8px 5px 7px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 0.5px solid rgba(0, 0, 0, 0.12);
+    background: rgba(255, 255, 255, 0.16);
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
     border-radius: var(--radius-full);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -995,13 +1025,13 @@ body {
 }
 
 .pdp-review__rating img {
-    width: 10px;
+    width: 11px;
     height: 11px;
 }
 
 .pdp-review__rating span {
     font-family: var(--font-compact);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 656;
     color: var(--color-text-primary);
     letter-spacing: 0.22px;
@@ -1013,7 +1043,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
+    letter-spacing: 0px;
     line-height: 1.3;
     opacity: 0.7;
     margin-bottom: 12px;
@@ -1034,8 +1064,8 @@ body {
 }
 
 .pdp-review__photo--more {
-    background: #f4efeb;
-    border: 0.5px solid rgba(8, 33, 65, 0.16);
+    background: rgba(0, 0, 0, 0.02);
+    border: 0.5px solid rgba(8, 33, 65, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1046,6 +1076,7 @@ body {
     font-size: 13px;
     font-weight: 656;
     color: var(--color-text-primary);
+    opacity: 0.7;
     letter-spacing: 0.26px;
     text-transform: uppercase;
 }
@@ -1053,7 +1084,7 @@ body {
 .pdp-review__footer {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
 }
 
 .pdp-review__date {
@@ -1061,29 +1092,29 @@ body {
     font-size: 14px;
     font-weight: 400;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
-    opacity: 0.5;
+    letter-spacing: -0.2px;
+    opacity: 0.6;
 }
 
 .pdp-review__sep {
     font-family: var(--font-sans);
     font-size: 14px;
     color: var(--color-text-primary);
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 .pdp-review__footer img {
-    width: 12px;
-    height: 12px;
-    opacity: 0.5;
+    width: 14px;
+    height: 14px;
+    opacity: 0.8;
 }
 
 .pdp-review__helpful {
     font-family: var(--font-sans);
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 480;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
 }
 
 .pdp-reviews__more {
@@ -1092,13 +1123,13 @@ body {
     justify-content: center;
     width: 100%;
     padding-top: 16px;
-    margin-top: 16px;
+    margin-top: 24px;
     border-top: 1px dashed rgba(0, 0, 0, 0.1);
     font-family: var(--font-sans);
     font-size: 14px;
     font-weight: 590;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
 }
 
 /* ========================================
@@ -1107,14 +1138,14 @@ body {
 
 .pdp-cross-sell {
     padding: 32px 20px;
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.16);
 }
 
 .pdp-cross-sell__list {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-top: 24px;
+    margin-top: 32px;
 }
 
 .pdp-cross-sell__item {
@@ -1124,8 +1155,8 @@ body {
 }
 
 .pdp-cross-sell__image {
-    width: 52px;
-    height: 52px;
+    width: 56px;
+    height: 56px;
     background: #e8e8e8;
     border-radius: var(--radius-md);
     overflow: hidden;
@@ -1143,13 +1174,12 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 1px;
 }
 
 .pdp-cross-sell__text {
     display: flex;
     flex-direction: column;
-    gap: 4px;
 }
 
 .pdp-cross-sell__name {
@@ -1157,7 +1187,7 @@ body {
     font-size: 14px;
     font-weight: 590;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
 }
 
 .pdp-cross-sell__desc {
@@ -1165,8 +1195,8 @@ body {
     font-size: 14px;
     font-weight: 400;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
-    opacity: 0.5;
+    letter-spacing: -0.2px;
+    opacity: 0.7;
 }
 
 .pdp-cross-sell__price {
@@ -1174,12 +1204,12 @@ body {
     font-size: 14px;
     font-weight: 590;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
 }
 
 .pdp-cross-sell__prices {
     display: flex;
-    gap: 2px;
+    gap: 4px;
 }
 
 .pdp-cross-sell__price-old {
@@ -1187,7 +1217,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
     opacity: 0.44;
     text-decoration: line-through;
 }
@@ -1195,7 +1225,8 @@ body {
 .pdp-cross-sell__add {
     width: 40px;
     height: 40px;
-    border: 0.5px solid rgba(0, 0, 0, 0.12);
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1222,6 +1253,7 @@ body {
 .pdp-faq {
     padding: 32px 20px;
     border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.16);
 }
 
 .pdp-faq__list {
@@ -1244,15 +1276,16 @@ body {
 .pdp-faq__question span {
     font-family: var(--font-sans);
     font-size: 14px;
-    font-weight: 510;
+    font-weight: 480;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
 }
 
 .pdp-faq__chevron {
     width: 16px;
     height: 16px;
     transition: transform var(--duration-normal) var(--ease-out);
+    opacity: 0.5;
 }
 
 .pdp-faq__item--open .pdp-faq__chevron {
@@ -1270,22 +1303,22 @@ body {
 
 .pdp-faq__answer p {
     font-family: var(--font-sans);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     color: var(--color-text-primary);
-    letter-spacing: -0.5px;
-    line-height: 1.34;
+    letter-spacing: -0.2px;
+    line-height: 1.4;
     opacity: 0.7;
 }
 
 .pdp-faq__help {
     display: flex;
     gap: 4px;
-    padding-top: 24px;
+    padding-top: 32px;
     font-family: var(--font-compact);
     font-size: 11px;
     font-weight: 556;
-    letter-spacing: 0.44px;
+    letter-spacing: 0.2px;
     text-transform: uppercase;
 }
 
