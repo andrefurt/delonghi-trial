@@ -227,17 +227,29 @@ function bindEvents() {
     const compareBtn = e.target.closest(".product-card__compare");
     const addToCartBtn = e.target.closest(".product-card__add-to-cart");
     const colorBtn = e.target.closest(".product-card__color");
+    const productCard = e.target.closest(".product-card");
 
+    // Handle compare button click
     if (compareBtn) {
       handleCompareClick(compareBtn);
+      return;
     }
 
+    // Handle add to cart button click
     if (addToCartBtn) {
       handleAddToCart(addToCartBtn);
+      return;
     }
 
+    // Handle color swatch click
     if (colorBtn) {
       handleColorClick(colorBtn);
+      return;
+    }
+
+    // Handle card click (navigate to PDP)
+    if (productCard) {
+      handleCardClick(productCard);
     }
   });
 
@@ -451,6 +463,23 @@ function handleOrientationClick(e) {
       // TODO: Open welcome pack modal
       showToast("Welcome pack info coming soon");
       break;
+  }
+}
+
+// Product card click - navigate to PDP
+function handleCardClick(card) {
+  const productId = parseInt(card.dataset.productId);
+
+  // Map product IDs to their PDP pages
+  const pdpPages = {
+    1: "pdp.html", // Rivelia
+  };
+
+  const pdpUrl = pdpPages[productId];
+
+  if (pdpUrl) {
+    // Navigate to PDP
+    window.location.href = pdpUrl;
   }
 }
 

@@ -1,10 +1,24 @@
 /* De'Longhi Main Styles */
 
+html {
+    background: #f9f4f0;
+}
+
+.ios-status-bar-cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: env(safe-area-inset-top);
+    background: #f9f4f0;
+    z-index: 99999;
+}
+
 body {
     font-family: var(--font-sans);
     font-size: var(--text-base);
     color: var(--color-text-primary);
-    background: var(--color-bg);
+    background: #f9f4f0;
 }
 
 /* Page-specific adjustments */
